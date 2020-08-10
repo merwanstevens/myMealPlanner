@@ -6,6 +6,9 @@
 /**/
 /*a*/
 /*b*/
+body{
+	background-image: linear-gradient(to top, rgba(200, 200, 255,0), rgba(200, 200, 255,.5));
+}
 /*c*/
 /*d*/
 /*e*/
@@ -37,7 +40,7 @@
 }
 
 .imgDiv{
-	margin-right: 5px;
+	/*margin-right: 5px;*/
 	margin-bottom: 5px;
 	text-align: center;
 }
@@ -73,6 +76,9 @@
 /*q*/
 /*r*/
 /*s*/
+.selectionMaker button, input{
+	display: inline;
+}
 /*t*/
 /*u*/
 /*v*/

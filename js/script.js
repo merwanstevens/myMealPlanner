@@ -12,6 +12,25 @@ console.log("js is connected");
 /*d*/
 /*e*/
 /*f*/
+function foodBassedOffSearch(searchString){
+
+	$.get( "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchString, function( data ) {
+  		$( "#result" ).html( data );
+  		//data["meals"][0]["strMealThumb"]);
+		//data is the json object 
+		//["meals"] is the  		
+  		console.log(data);
+  		//console.log(data["meals"]);
+  		//console.log(data["meals"][0]);
+  		//console.log(data["meals"][0]["strMealThumb"]);
+  		//console.log("There are " + data["meals"].length + " meals");
+  		for(i=0; i < data["meals"].length; i++ ){
+  			thumbNailBuilder(data);
+  		}
+  		
+  		console.log( "Load was performed." );
+	});
+}
 /*g*/
 /*h*/
 /*i*/
@@ -25,6 +44,11 @@ console.log("js is connected");
 /*q*/
 /*r*/
 /*s*/
+function start(){
+	var search = document.getElementById("fSearch");
+	console.log(search.value)
+	foodBassedOffSearch(search.value);
+}
 /*t*/
 function thumbNailBuilder(data){
 	var url = data["meals"][i]["strMealThumb"];

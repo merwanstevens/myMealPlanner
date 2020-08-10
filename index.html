@@ -16,31 +16,19 @@
 </head>
 
 <body>
-  <h>Headding</h>
-  <p>Para</p>
-
-  <div id="result">
-  	
-  </div>
-
-  <script>
-  	$.get( " https://www.themealdb.com/api/json/v1/1/search.php?s=A", function( data ) {
-  		$( "#result" ).html( data );
-  		//data["meals"][0]["strMealThumb"]);
-		//data is the json object 
-		//["meals"] is the  		
-  		console.log(data);
-  		//console.log(data["meals"]);
-  		//console.log(data["meals"][0]);
-  		//console.log(data["meals"][0]["strMealThumb"]);
-  		//console.log("There are " + data["meals"].length + " meals");
-  		for(i=0; i < data["meals"].length; i++ ){
-  			thumbNailBuilder(data);
-  		}
-  		
-  		console.log( "Load was performed." );
-	});
-
-  </script>
+	<h1>My Meal Planner</h1>
+	<div class="row">
+		<div class="col">
+			<div class="selectionMaker">
+		  		<label for="fSearch">Search for Food:</label><br>
+		  		<input type="text" id="fSearch" name="fSearch" value="pizza">
+		  		<button onClick="start()">Search</button>
+		  	</div> 
+		  	<div id="result">
+		  	
+		  	</div>
+	  </div>
+  	</div>
+  
 </body>
 </html>
