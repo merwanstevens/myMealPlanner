@@ -13,11 +13,61 @@
 /*g*/
 /*h*/
 /*i*/
+.icon{
+	z-index:1;
+	color: white;
+	margin-right: 15px;
+	padding: 5px;
+  	padding-top: 20px;
+}
+
+.icon:hover{
+	z-index:1;
+	color: #e6e6e6;
+}
+
+.imgDivNavBar{
+	opacity: 0.9;
+	/*background-color: gray;*/
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0,0), rgba(0, 0, 0,1));
+	display: block;
+	position: absolute;
+	height:50px;
+  	bottom: 0;
+}
+
+.imgDiv{
+	margin-right: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.imgDivTtlBar{
+	opacity: 0.9;
+	/*background-color: gray;*/
+	background-image: linear-gradient(to top, rgba(0, 0, 0,0), rgba(0, 0, 0,1));
+	display: block;
+	position: absolute;
+  	top: 0;
+}
 /*j*/
 /*k*/
 /*l*/
 /*m*/
+.mealTitle{
+	opacity: 0.9;
+	padding-left: 10px;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	display: block;
+	z-index: 1;
+  	top: 0;
+}
 /*n*/
+.nImgWrapper{
+	margin: auto;
+}
 /*o*/
 /*p*/
 /*q*/
@@ -43,5 +93,8 @@
 /**/
 /**/
 /**/
+.imgDivD, .nImgWrapperD{
+	border:solid black 1px;
+}
 /**/
 

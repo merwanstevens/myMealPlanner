@@ -8,6 +8,7 @@
   <meta name="description" content="The food planner">
   <script src="jquery/dist/jquery.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="css/style.css">
@@ -34,7 +35,7 @@
   		//console.log(data["meals"][0]["strMealThumb"]);
   		//console.log("There are " + data["meals"].length + " meals");
   		for(i=0; i < data["meals"].length; i++ ){
-  			thumbNailBuilder(data["meals"][i]["strMealThumb"]);
+  			thumbNailBuilder(data);
   		}
   		
   		console.log( "Load was performed." );
